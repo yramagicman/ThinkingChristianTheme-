@@ -1,0 +1,26 @@
+/*start layout */
+$pageWidth: $desktopPageWidth;
+.col {
+  min-width: 0;
+  position: relative;
+  //  margin-left: percentage($gutter);
+}
+
+.span4:last-child, .span4-no-margin:last-child, .span4-push:last-child, .span4-pull:last-child {
+  min-width: 0;
+}
+
+nav ul {
+  width: $pageWidth;
+}
+
+//@include establish-baseline();
+.container {
+  width: $pageWidth;
+  max-width: $maxWidth;
+}
+.no-desktop{
+  display:none;
+}
+
+/* end layout */

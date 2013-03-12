@@ -1,0 +1,124 @@
+/* @group WP WISYWIG */
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption .wp-caption-text {
+//    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+.entry-content img {
+  margin: 1.5em;
+}
+.col3 {
+  width: 32%;
+}
+.tagcloud {
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+.tagcloud a {
+  float: left;
+  margin-right: .3em;
+}
+
+.navigation {
+  width: 100%;
+  clear: both;
+  display: block;
+  overflow: hidden;
+  background: #f5f5f5;
+  border-radius: 10px;
+  -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.77) inset;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.77) inset;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.77) inset;
+  margin: 3em auto 3em -0.5em;
+  height: 35px;
+}
+
+.archive .navigation {
+  margin: 1em auto;
+}
+
+.navigation a {
+  /*  background: #f5f5f5;*/
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  display: block;
+  overflow: hidden;
+  margin: -5px 0 0;
+}
+
+.navigation a:hover {
+  border: 1px solid black;
+  background-color: #ffffff;
+}
+
+//#comment {
+//  /*   font-size: 13.5pt; */
+//}
+
+.sticky,.gallery-caption,.bypostauthor {
+  color: inherit;
+}
+
+/* @end */
+

@@ -1,0 +1,173 @@
+$boxheight: 150px;
+$r: 7px;
+$outerR: 10px;
+
+header {
+  background: none;
+  border: none;
+  height: auto;
+  box-shadow: none;
+  margin-top: -10px;
+  nav {
+    display: none;
+  }
+  .blogTitle {
+    position: relative;
+    top:0;
+    margin-bottom:0;
+  }
+}
+.container{
+//  width: 80%;
+//  min-width: 925px;
+//  max-width: 1000px;
+}
+.navGeneral {
+  position: static;
+  margin-top: 1em;
+}
+
+.content {
+  background: #fff;
+  @include border-radius($outerR);
+}
+
+.body {
+  width: 100%;
+  left: 0;
+}
+.central-column{
+  margin-bottom: 3em;
+  margin-top: 0;
+  border-color:#999999;
+  @include border-radius(5px);
+}
+.top {
+  margin: 3em 0 4em percentage($gutter * 0.5);
+  a {
+    color: #fff;
+    @extend h1;
+    font-weight:bold;
+    margin:0;
+    text-decoration: none;
+  }
+// a:after {
+//    display: block;
+//    content: attr(title);
+//    position: relative;
+//    font-size: 55%;
+//    letter-spacing:2px;
+//    width:98%;
+//    font-weight: normal;
+//  }
+}
+.top ul{
+  margin:0;
+  padding:0;
+}
+ .top li {
+  @include box-shadow;
+  position: relative;
+  @extend .span4;
+  float:left;
+  overflow:hidden;
+  @include border-radius($r);
+  border:1px solid black;
+  .pos, a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    text-shadow: 0 0 10px black;
+    background: url(images/50percent.png);
+    background: none rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 115px 5px 10px 5px;
+    -webkit-transition: background 400ms ease;
+    -moz-transition: background 400ms ease;
+    transition: background 400ms ease;
+    &:hover {
+      background:none rgba(0, 0, 0, 0);
+    }
+  }
+}
+
+.menu-item-865 {
+  background: url("images/familyHeader.jpg") 65% top no-repeat;
+  height: $boxheight;
+}
+
+.menu-item-866 {
+  background: url("images/pastorHeader.jpg") 65% top no-repeat;
+  height: $boxheight;
+}
+
+.menu-item-867 {
+  background: url("images/businessHeader.jpg") 50% top no-repeat;
+  height: $boxheight;
+}
+
+.featured-links {
+  margin-top: 2em;
+  padding-top: 0;
+  border-top: 1px solid #cccccc;
+  h2 {
+    margin-top: 0.25em;
+  }
+  ul {
+    margin-left: -1.5em;
+    padding: 0;
+  }
+  li {
+    margin: 0 -0.75em;
+    display: inline;
+    text-align: center;
+  }
+}
+
+.featured-post {
+  margin-top: 0;
+}
+.pagehead{
+  margin-bottom:2.5em;
+  text-align:center;
+}
+.pagetitle{
+  color: black;
+  margin-bottom: -0.4em;
+  text-align:center;
+}
+
+.topTitle{
+  margin-bottom:0;
+}
+.topTitle a{
+  color: darken($links, 15%);
+  text-decoration:underline;
+  &:hover{
+    color: black;
+    text-decoration:none;
+  }
+}
+.true-reason{
+  margin-top:2em;
+}
+.main {
+  border-bottom: 1px solid #999999;
+  padding: 0 3px 1px;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+}
+#searchform  p{
+  margin-top:-0.5em;
+}
+#searchform .submitbutton{
+  display:block;
+}
+footer{
+  @extend .container;
+  background:white;
+  margin-top:50px;
+  @include border-radius($outerR $outerR 0 0)
+}

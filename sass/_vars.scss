@@ -1,0 +1,55 @@
+//font size stuff
+$base-font-size: 16px;
+$base-line-height: $base-font-size * 1.7;
+$font-size: $base-font-size;
+
+//line11
+$lines: 0.5;
+
+// grid definitions
+$pageWidth: 1020px;
+//$maxWidth: 1200px;
+$desktopPageWidth: $pageWidth;
+$ipadPageWidthPortrait: 80%;
+$ipadPageWidthLandscape: 80%;
+$numCols: 12;
+$gutter: 0.04;
+$offset: 5.5;
+$borderWidth: 1;
+$hundred: 100;
+
+// classes
+$classSlug: span !default;
+$no-margin: no-margin !default;
+$addBorder: add-border !default;
+$push: push !default;
+$pull: pull !default;
+$offsetSlug: offset !default;
+
+//colors
+$textColor: #222;
+$bgColor: #242424;
+$contentBg: #fff;
+$action: #2f50d0;
+$borderColor: #333;
+$links: rgb(46, 89, 151);
+$hover: darken($links, 30%);
+$visited: rgb(140, 30, 30);
+
+// border stuff
+$borderWidth: $borderWidth !default;
+
+//line 35
+$borderStyle: solid !default;
+
+
+//line 43
+
+$subMenuWidth: 9.5em;
+
+//gradient
+$startColor: lighten($bgColor, 5%);
+$endColor: darken($bgColor, 20%);
+
+$startActionColor: lighten($action, 10%);
+$endActionColor: darken($action, 10%);
