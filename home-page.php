@@ -20,9 +20,6 @@ $featuredPost = new WP_Query($args); ?>
           TODO add facebook like link
         -->
         <?php wp_nav_menu( array( 'container_class' => 'menu', 'theme_location' => 'HomePage' ) ); ?>
-        <!-- <h2 class="parents col span4 add-border"><a href="example.com" class="pos" title="Tristique Ipsum Vulputate Dolor">Parents </a></h2> 
-        <h2 class="pastors-teachers col span4 add-border"><a href="example.com" class="pos" title="Tristique Ipsum Vulputate Dolor"> Pastors and Teachers </a></h2> 
-        <h2 class="marketplace col span4 add-border"><a href="example.com" class="pos" title="Tristique Ipsum Vulputate Dolor"> Marketplace </a></h2> -->
       </div>
       <div class="row">
         <aside class="featured-topic col span3">
@@ -103,17 +100,6 @@ $featuredPost = new WP_Query($args); ?>
           </div>
         </aside>
       </div>
-        <!-- <div class="row featured-links">
-          <div class="col span12">
-            <h2>Featured Links</h2>
-            <ul>
-              <li class="col span3">Link 1</li>
-              <li class="col span3">Link 2</li>
-              <li class="col span3">Link 3</li>
-              <li class="col span3">Link 4</li>
-            </ul>
-          </div>
-        </div> -->
     </div>
   </div>
 </div>

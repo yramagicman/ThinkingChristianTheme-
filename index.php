@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<!-- To remove the Featured, Focused, Further headers rename this file and change index2.php to index.php. It should work without any problem. -->
 <div class="content">
   <div class="body">
     <div class="padding">

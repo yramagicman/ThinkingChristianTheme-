@@ -22,6 +22,8 @@ license URI: http://www.gnu.org/licenses/gpl.html
 @import "_forms.scss";
 @import "_utility_classes.scss";
 
+// Most of this file will look familiar from your old stylesheet. Stuff that's not a global tag is here, along with almost anything that carried over from your old blog.
+
 .topMeta {
   margin-top: -1em;
 }
@@ -608,7 +610,7 @@ footer .presenting {
 .lt-ie9 {
   .home {
     .top {
-      margin: 3em 0 5.7em;
+//      margin: 3em 0 5.7em;
       a {
         color: #fff;
 //        font-family: $heading-font;
@@ -618,13 +620,6 @@ footer .presenting {
         text-decoration: none;
         //      white-space: nowrap !important;
      
-      }
-      a:after {
-        display: block;
-        content: attr(title);
-        position: relative;
-        font-size: 1em;
-        font-weight: normal;
       }
     }
   }

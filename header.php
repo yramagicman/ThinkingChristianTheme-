@@ -18,23 +18,8 @@
 ************ STYLES ENQUED IN FUNCTIONS.PHP *************************
 *********************************************************************
 -->
-<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
-<meta name="robots" content="follow, all" />
-<!--copy from here-->
-<!--to here-->
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-<?php
-//$scriptURL = array(
-//    '/wp-content/themes/ThinkingChristianRedesign/js/allTheThings.js', '/wp-content/themes/BlueBars/js/bxslider/jquery.bxSlider.min.js'
-//    );
-//  wp_register_script('allthethings', $scriptURL[0]);//tell wordpress about script
-//  wp_register_script('slider', $scriptURL[1]);//tell wordpress about script
-  wp_enqueue_script('jquery');//call jquery
-  wp_enqueue_script('comment-reply');
-//  wp_enqueue_script('allthethings'); //call all the things
-//  wp_enqueue_script('slider'); //call all the things
-?>
 <!-- ******************  WP HEAD  *************************-->
 <?php wp_head(); ?>
 <script type="text/javascript">

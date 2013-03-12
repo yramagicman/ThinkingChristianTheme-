@@ -3,12 +3,11 @@ $base-font-size: 16px;
 $base-line-height: $base-font-size * 1.7;
 $font-size: $base-font-size;
 
-//line11
+
 $lines: 0.5;
 
-// grid definitions
+// grid definitions DON'T CHANGE THESE
 $pageWidth: 1020px;
-//$maxWidth: 1200px;
 $desktopPageWidth: $pageWidth;
 $ipadPageWidthPortrait: 80%;
 $ipadPageWidthLandscape: 80%;
@@ -18,7 +17,7 @@ $offset: 5.5;
 $borderWidth: 1;
 $hundred: 100;
 
-// classes
+// classes DON'T CHANGE THESE
 $classSlug: span !default;
 $no-margin: no-margin !default;
 $addBorder: add-border !default;
@@ -27,6 +26,7 @@ $pull: pull !default;
 $offsetSlug: offset !default;
 
 //colors
+// Global colors.
 $textColor: #222;
 $bgColor: #242424;
 $contentBg: #fff;
@@ -39,15 +39,15 @@ $visited: rgb(140, 30, 30);
 // border stuff
 $borderWidth: $borderWidth !default;
 
-//line 35
+
 $borderStyle: solid !default;
 
 
-//line 43
+
 
 $subMenuWidth: 9.5em;
 
-//gradient
+//gradient colors. Used on buttons. The base color is defined under the Colors header, adjust the percentages here to change how noticeable the gradient is.
 $startColor: lighten($bgColor, 5%);
 $endColor: darken($bgColor, 20%);
 

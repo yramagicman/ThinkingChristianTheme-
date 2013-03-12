@@ -1,5 +1,5 @@
 /* @group global classes */
-
+// This file contains all the grid stuffs that control the layout of the home page.
 .container {
   overflow: hidden;
   margin: auto;
@@ -19,6 +19,7 @@
   float: left;
 //  overflow: hidden;
   position: relative;
+  /* use box sizing because it makes the boxes not expand when padding is added, which is the behavior I would like to be default, but it's not. */
   -mox-box-sizing: border-box;
   box-sizing: border-box;
   //  margin-left: percentage($gutter);
@@ -58,17 +59,6 @@
     margin-left: 0;
   }
 }
-
-//.span1-no-margin:first-child {
-//  margin-left: 0;
-//  //remove margin from every first element in a row */
-//}
-//
-//@for $i from 1 through $numCols {
-//  .#{$classSlug}#{$i}-#{no-margin}:first-child {
-//    @extend .span1-no-margin:first-child;
-//  }
-//}
 /* @end */
 /* @group with a border */
 
@@ -84,7 +74,7 @@
 }
 
 /* @end */
-
+//NOT USED Removed to keep file size down.
 /* @group pull and push*/
 //@for $i from 1 through $numCols {
 //  .#{$pull}-#{$classSlug}#{$i} {
@@ -121,11 +111,11 @@
 //
 ///* @end */
 /* @group offset*/
-@for $i from 1 through $numCols - 1 {
-  .#{$offsetSlug}#{$i} {
-    $xwidth: percentage($i / $numCols);
-    margin-left: $xwidth - 4.49;
-  }
-}
+//@for $i from 1 through $numCols - 1 {
+//  .#{$offsetSlug}#{$i} {
+//    $xwidth: percentage($i / $numCols);
+//    margin-left: $xwidth - 4.49;
+//  }
+//}
 /* the final offset is unnecessary as it puts the content off the page */
 /* @end */

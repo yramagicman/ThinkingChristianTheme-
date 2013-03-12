@@ -101,11 +101,15 @@ register_nav_menus( array(
   
 //kill default gallery styles
 //add_filter( 'use_default_gallery_style', '__return_false' ); 
+
+// STYLES ENQUED HERE!
 function my_scripts_method() {
   wp_enqueue_script(
     'modernizr',
     get_template_directory_uri() . '/js/modernizr.min.js');
-    wp_enqueue_style('main', get_bloginfo('template_directory').'/minified.php',array('fonts'), 2.5,  'all');
+    wp_enqueue_script('jquery');//call jquery
+    wp_enqueue_script('comment-reply');
+    wp_enqueue_style('main', get_bloginfo('template_directory').'/minified.php',array('fonts'), 2.5/* to bust caches, change this number */,  'all');
     wp_enqueue_style('fonts', 'http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic','', '',  'all');
 }
 

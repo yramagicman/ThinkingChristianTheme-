@@ -1,3 +1,5 @@
+// All the styles for the home page.
+
 $boxheight: 150px;
 $r: 7px;
 $outerR: 10px;
@@ -16,11 +18,6 @@ header {
     top:0;
     margin-bottom:0;
   }
-}
-.container{
-//  width: 80%;
-//  min-width: 925px;
-//  max-width: 1000px;
 }
 .navGeneral {
   position: static;
@@ -51,6 +48,7 @@ header {
     margin:0;
     text-decoration: none;
   }
+//  show stuff under the links
 // a:after {
 //    display: block;
 //    content: attr(title);

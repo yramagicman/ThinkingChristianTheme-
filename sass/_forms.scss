@@ -1,8 +1,10 @@
+//manages form fields
+
 $r: 7px;
 //$startColor: #f00;
 input, button, textarea, select[size] {
   border: $borderWidth#{px} $borderStyle lighten($borderColor, 50%);
-  background: lighten($bgColor, 100%);
+  background: lighten($bgColor, 100%); //white
   padding: 5px;
   margin: 2px 0;
 }
