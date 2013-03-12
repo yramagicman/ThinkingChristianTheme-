@@ -45,8 +45,7 @@ $featuredPost = new WP_Query($args); ?>
           <div class="the-core">
             <h2 class="main">The Core</h2>
             <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("The_Core") ) : ?>
- 
-       The Core
+               The Core
             <?php  endif; ?>
             
           </div>
