@@ -15,10 +15,6 @@ $featuredPost = new WP_Query($args); ?>
           <h1 class="pagetitle">Weekly Featured Content For</h1>
           <p>Blah blah blah</p>
         </hgroup>
-        <!--
-          TODO blurb
-          TODO add facebook like link
-        -->
         <?php wp_nav_menu( array( 'container_class' => 'menu', 'theme_location' => 'HomePage' ) ); ?>
       </div>
       <div class="row">
