@@ -104,12 +104,13 @@ register_nav_menus( array(
 
 // STYLES ENQUED HERE!
 function my_scripts_method() {
+  $my_theme = wp_get_theme();
   wp_enqueue_script(
     'modernizr',
     get_template_directory_uri() . '/js/modernizr.min.js');
     wp_enqueue_script('jquery');//call jquery
     wp_enqueue_script('comment-reply');
-    wp_enqueue_style('main', get_bloginfo('template_directory').'/minified.php',array('fonts'), 2.5/* to bust caches, change this number */,  'all');
+    wp_enqueue_style('main', get_bloginfo('template_directory').'/minified.php',array('fonts'), $my_theme->{'Version'},  'all');
     wp_enqueue_style('fonts', 'http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic','', '',  'all');
 }
 
