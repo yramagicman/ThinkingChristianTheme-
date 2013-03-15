@@ -88,11 +88,11 @@ if ( function_exists('register_sidebar') ) {
   ));
   
 }
-function sky_page_menu_args( $args ) {
+function TC_page_menu_args( $args ) {
   $args['show_home'] = true;
   return $args;
 }
-add_filter( 'wp_page_menu_args', 'sky_page_menu_args' );
+add_filter( 'wp_page_menu_args', 'TC_page_menu_args' );
 register_nav_menus( array(
     'primary' => __( 'Primary Navigation', 'ThinkingChristian' ),
     'generalNav' => __( 'General Nav', 'ThinkingChristian' ),
