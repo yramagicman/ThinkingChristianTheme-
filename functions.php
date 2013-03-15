@@ -110,7 +110,7 @@ function my_scripts_method() {
     get_template_directory_uri() . '/js/modernizr.min.js');
     wp_enqueue_script('jquery');//call jquery
     wp_enqueue_script('comment-reply');
-    wp_enqueue_style('main', get_bloginfo('template_directory').'/minified.php',array('fonts'), $my_theme->{'Version'},  'all');
+    wp_enqueue_style('main', get_template_directory_uri().'/minified.php',array('fonts'), $my_theme->{'Version'},  'all');
     wp_enqueue_style('fonts', 'http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic','', '',  'all');
 }
 
