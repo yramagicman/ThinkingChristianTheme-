@@ -108,6 +108,9 @@ function my_scripts_method() {
   wp_enqueue_script(
     'modernizr',
     get_template_directory_uri() . '/js/modernizr.min.js');
+    wp_enqueue_script(
+      'nofout',
+      get_template_directory_uri() . '/js/foutbegone.min.js');
     wp_enqueue_script('jquery');//call jquery
     wp_enqueue_script('comment-reply');
     wp_enqueue_style('main', get_template_directory_uri().'/minified.php',array('fonts'), $my_theme->{'Version'},  'all');
