@@ -4,7 +4,7 @@ add_theme_support( 'automatic-feed-links' );
 if ( function_exists('register_sidebar') ) {
   register_sidebar(array(
   'name'=>'sidebar',
-  'before_widget' => '<ul id="%1$s" class="widget %2$s">',
+  'before_widget' => '<ul id="%1$s" class="widget cf %2$s">',
   'after_widget' => '</ul>',
   'before_title' => '<h2 class="widgettitle">',
   'after_title' => '</h2>',
@@ -32,56 +32,56 @@ if ( function_exists('register_sidebar') ) {
   // ));
   register_sidebar(array(
   'name'=>'The_Core',
-  'before_widget' => '<ul id="%1$s" class="widget col1 collums %2$s">',
+  'before_widget' => '<ul id="%1$s" class="widget cf %2$s">',
   'after_widget' => '</ul>',
   'before_title' => '<h2 class="widgettitle">',
   'after_title' => '</h2>',
   ));
   register_sidebar(array(
   'name'=>'LLM',
-  'before_widget' => '<ul id="%1$s" class="widget col1 collums %2$s">',
+  'before_widget' => '<ul id="%1$s" class="widget cf %2$s">',
   'after_widget' => '</ul>',
   'before_title' => '<h2 class="widgettitle">',
   'after_title' => '</h2>',
   ));
   register_sidebar(array(
   'name'=>'LLI',
-  'before_widget' => '<ul id="%1$s" class="widget col1 collums %2$s">',
+  'before_widget' => '<ul id="%1$s" class="widget cf %2$s">',
   'after_widget' => '</ul>',
   'before_title' => '<h2 class="widgettitle">',
   'after_title' => '</h2>',
   ));
   register_sidebar(array(
   'name'=>'email',
-  'before_widget' => '<ul id="%1$s" class="widget col1 collums %2$s">',
+  'before_widget' => '<ul id="%1$s" class="widget cf %2$s">',
   'after_widget' => '</ul>',
   'before_title' => '<h2 class="widgettitle">',
   'after_title' => '</h2>',
   ));
   register_sidebar(array(
   'name'=>'extra1',
-  'before_widget' => '<ul id="%1$s" class="widget col1 collums %2$s">',
+  'before_widget' => '<ul id="%1$s" class="widget cf %2$s">',
   'after_widget' => '</ul>',
   'before_title' => '<h2 class="main widgettitle">',
   'after_title' => '</h2>',
   ));
   register_sidebar(array(
   'name'=>'extra2',
-  'before_widget' => '<ul id="%1$s" class="widget col1 collums %2$s">',
+  'before_widget' => '<ul id="%1$s" class="widget cf %2$s">',
   'after_widget' => '</ul>',
   'before_title' => '<h2 class="main widgettitle">',
   'after_title' => '</h2>',
   ));
   register_sidebar(array(
   'name'=>'extra3',
-  'before_widget' => '<ul id="%1$s" class="widget col1 collums %2$s">',
+  'before_widget' => '<ul id="%1$s" class="widget cf %2$s">',
   'after_widget' => '</ul>',
   'before_title' => '<h2 class="main widgettitle">',
   'after_title' => '</h2>',
   ));
   register_sidebar(array(
   'name'=>'extra4',
-  'before_widget' => '<ul id="%1$s" class="widget col1 collums %2$s">',
+  'before_widget' => '<ul id="%1$s" class="widget cf %2$s">',
   'after_widget' => '</ul>',
   'before_title' => '<h2 class="main widgettitle">',
   'after_title' => '</h2>',
