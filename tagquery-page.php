@@ -3,6 +3,7 @@
 Template Name: Query Tags
 */
 $tags = $_GET['tags'];
+$tags = strip_tags($_GET['tags']);
 ?>
 <?php get_header(); ?>
 <div class="content">
