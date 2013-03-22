@@ -1,9 +1,3 @@
-<?php
-/*
-Template Name: Home Page
-*/
-?>
-
 <?php get_header(); ?>
 <?php $args = array ('ignore_sticky_posts'=>'1', 'posts_per_page'=>'5');
 $featuredPost = new WP_Query($args); ?>
@@ -23,6 +17,7 @@ $featuredPost = new WP_Query($args); ?>
             email
           <?php  endif; ?>
           <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("extra1") ) : ?>
+            extra 1
           <?php  endif; ?>
           <div class="featured-post">
             <h2 class="main">The Blog</h2>
@@ -55,7 +50,7 @@ $featuredPost = new WP_Query($args); ?>
               LLI
             
             <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("extra2") ) : ?>
-
+              Extra 2
             <?php  endif; ?>
           </div>
           </aside>
@@ -79,6 +74,7 @@ $featuredPost = new WP_Query($args); ?>
             <small>"The New Atheists claim to be the party of reason.... The problem is, they're not very good at it." — Discover the provocative ebook <a href="http://book.truereason.org/"><em>True Reason: Christian Responses to the Challenge of Atheism.</em></a></small>
           <!-- </div> -->
           <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("extra3") ) : ?>
+            extra 3
           <?php  endif; ?>
           <h2 class="main">Book Review</h2>
           <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("bookReview") ) : ?>
@@ -91,6 +87,7 @@ $featuredPost = new WP_Query($args); ?>
               LLM
             
             <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("extra4") ) : ?>
+              extra 4
             <?php  endif; ?>
           </div>
         </aside>
