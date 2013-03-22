@@ -1,20 +1,20 @@
 <?php
 /*
-Template Name: Tag Query
+Template Name: Query Tags
 */
+$tags = $_GET['tags'];
 ?>
 <?php get_header(); ?>
-<!-- To remove the Featured, Focused, Further headers rename this file and change index2.php to index.php. It should work without any problem. -->
 <div class="content">
   <div class="body">
     <div class="padding">
       <?php
-      // if (!is_paged()) {
-      // $args = array ('tag=chattells+privation' );
-        $my_query = new WP_Query('tag=chattels+privation' );
-      // }else {
-      //  $my_query = new WP_Query($query_string.'&posts_per_page=9&offset=1');
-      // }
+      if (isset($tags)) {
+          $my_query = new WP_Query('tag='.$tags );
+      } else{
+                $my_query = new WP_Query('tag=core' );
+      }
+
       ?>
 
 <?php if ($my_query->have_posts() and !is_paged()) : ?>
