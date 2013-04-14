@@ -1557,6 +1557,7 @@ footer .presenting {
   font-weight: bold;
   margin: 0;
   text-decoration: none;
+  font-size: 125%;
 }
 /* line 62, sass/_home.scss */
 .home .top ul {

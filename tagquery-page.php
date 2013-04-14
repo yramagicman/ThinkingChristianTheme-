@@ -36,12 +36,7 @@ $tags = strip_tags($_GET['tags']);
         <div class="linkpages">
           <?php wp_link_pages(); ?>
         </div>
-        <?php if ( function_exists('the_tags') ) : ?>
-        <div class="catntag">
-          <?php if (has_tag() ) :?>
-          Tags:
-          <?php the_tags('<em></em>', ', ', ''); ?>
-          <?php endif; ?><br />
+        
           <?php 
         $zero ='0 comments';
         $one = '1 comment';
@@ -57,15 +52,7 @@ $tags = strip_tags($_GET['tags']);
       <small>
       <?php //edit_post_link('Edit this entry?','',''); ?>
       </small>
-      <div class="comments">
-        <?php if (function_exists('wp_list_comments')): ?>
-        <!-- WP 2.7 and above -->
-        <?php comments_template('', true); ?>
-        <?php else : ?>
-        <!-- WP 2.6 and below -->
-        <?php comments_template(); ?>
-        <?php endif; ?>
-      </div>
+      
       <!-- Closes Comment -->
       <?php endwhile; ?>
       <!--loop 2 -->
