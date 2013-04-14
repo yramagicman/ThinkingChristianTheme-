@@ -321,7 +321,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 textarea {
   overflow: auto;
   vertical-align: top;
-  border: 1px solid #999999;
+  border: 1px solid #999;
   display: block;
 }
 
@@ -1308,7 +1308,7 @@ li.recentcomments {
 /* line 428, sass/style.scss */
 .sidebar input, .sidebar label {
   margin-left: -1.5em;
-  font: 8.7pt/0 "Droid Serif", Georgia, serif;
+  font: 8.7pt / 0 "Droid Serif", Georgia, serif;
   padding: 3px 5px 3px 5px;
   width: 145px;
   margin: 10px;
@@ -1559,12 +1559,12 @@ footer .presenting {
   text-decoration: none;
   font-size: 125%;
 }
-/* line 62, sass/_home.scss */
+/* line 63, sass/_home.scss */
 .home .top ul {
   margin: 0;
   padding: 0;
 }
-/* line 66, sass/_home.scss */
+/* line 67, sass/_home.scss */
 .home .top li {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -1579,7 +1579,7 @@ footer .presenting {
   border-radius: 7px;
   border: 1px solid black;
 }
-/* line 74, sass/_home.scss */
+/* line 75, sass/_home.scss */
 .home .top li .pos, .home .top li a {
   position: absolute;
   top: 0;
@@ -1594,80 +1594,80 @@ footer .presenting {
   -moz-transition: background 400ms ease;
   transition: background 400ms ease;
 }
-/* line 87, sass/_home.scss */
+/* line 88, sass/_home.scss */
 .home .top li .pos:hover, .home .top li a:hover {
   background: none rgba(0, 0, 0, 0);
 }
-/* line 93, sass/_home.scss */
+/* line 94, sass/_home.scss */
 .home .menu-item-16088 {
   background: url("images/familyHeader.jpg") 65% top no-repeat;
   height: 150px;
 }
-/* line 98, sass/_home.scss */
+/* line 99, sass/_home.scss */
 .home .menu-item-16087 {
   background: url("images/pastorHeader.jpg") 65% top no-repeat;
   height: 150px;
 }
-/* line 103, sass/_home.scss */
+/* line 104, sass/_home.scss */
 .home .menu-item-16089 {
   background: url("images/businessHeader.jpg") 50% top no-repeat;
   height: 150px;
 }
-/* line 108, sass/_home.scss */
+/* line 109, sass/_home.scss */
 .home .featured-links {
   margin-top: 2em;
   padding-top: 0;
   border-top: 1px solid #cccccc;
 }
-/* line 112, sass/_home.scss */
+/* line 113, sass/_home.scss */
 .home .featured-links h2 {
   margin-top: 0.25em;
 }
-/* line 115, sass/_home.scss */
+/* line 116, sass/_home.scss */
 .home .featured-links ul {
   margin-left: -1.5em;
   padding: 0;
 }
-/* line 119, sass/_home.scss */
+/* line 120, sass/_home.scss */
 .home .featured-links li {
   margin: 0 -0.75em;
   display: inline;
   text-align: center;
 }
-/* line 126, sass/_home.scss */
+/* line 127, sass/_home.scss */
 .home .featured-post {
   margin-top: 0;
 }
-/* line 129, sass/_home.scss */
+/* line 130, sass/_home.scss */
 .home .pagehead {
   margin-bottom: 2.5em;
   text-align: center;
 }
-/* line 133, sass/_home.scss */
+/* line 134, sass/_home.scss */
 .home .pagetitle {
   color: black;
   margin-bottom: -0.4em;
   text-align: center;
 }
-/* line 139, sass/_home.scss */
+/* line 140, sass/_home.scss */
 .home .topTitle {
   margin-bottom: 0;
 }
-/* line 142, sass/_home.scss */
+/* line 143, sass/_home.scss */
 .home .topTitle a {
   color: #1c365c;
   text-decoration: underline;
 }
-/* line 145, sass/_home.scss */
+/* line 146, sass/_home.scss */
 .home .topTitle a:hover {
   color: black;
   text-decoration: none;
 }
-/* line 150, sass/_home.scss */
+/* line 151, sass/_home.scss */
 .home .true-reason {
   margin-top: 2em;
 }
-/* line 153, sass/_home.scss */
+/* line 154, sass/_home.scss */
 .home .main {
   border-bottom: 1px solid #999999;
   padding: 0 3px 1px;
@@ -1675,15 +1675,15 @@ footer .presenting {
   overflow: hidden;
   text-align: center;
 }
-/* line 160, sass/_home.scss */
+/* line 161, sass/_home.scss */
 .home #searchform p {
   margin-top: -0.5em;
 }
-/* line 163, sass/_home.scss */
+/* line 164, sass/_home.scss */
 .home #searchform .submitbutton {
   display: block;
 }
-/* line 166, sass/_home.scss */
+/* line 167, sass/_home.scss */
 .home footer {
   background: white;
   margin-top: 50px;
@@ -1706,7 +1706,7 @@ footer .presenting {
 @media print {
   /* line 6, sass/_print.scss */
   body {
-    margin: 0.25in 0.5in;
+    margin: .25in .5in;
   }
 
   /* line 9, sass/_print.scss */
@@ -1717,7 +1717,7 @@ footer .presenting {
   /* line 12, sass/_print.scss */
   * {
     background: transparent !important;
-    color: black !important;
+    color: #000 !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
@@ -1751,7 +1751,7 @@ footer .presenting {
   /* line 43, sass/_print.scss */
   pre,
   blockquote {
-    border: 1px solid #999999;
+    border: 1px solid #999;
     page-break-inside: avoid;
   }
 
