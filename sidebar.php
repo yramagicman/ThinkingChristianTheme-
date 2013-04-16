@@ -7,12 +7,13 @@ $theID = get_the_ID();
 $month = get_the_time('m', $theID);
 $day = get_the_time('d',$theID);
 $year = get_the_time('Y',$theID);
+$hour = $year = get_the_time('H',$theID);
 // marketplace id = 1163
   // parents id =  1149
   // leaders id = 1148
 //  unbelievers id = 1162
 //echo wp_get_referer();
-  $my_title_query = new WP_Query('cat=1163,1149,1148,1161&'."monthnum=$month&year=$year&day=$day" );
+  $my_title_query = new WP_Query('cat=409,1149,1148,1161&'."monthnum=$month&year=$year&day=$day&hour=$hour" );
      if ( $my_title_query->
     have_posts() ) { ?>
     <li>
@@ -22,7 +23,7 @@ $year = get_the_time('Y',$theID);
      wp_reset_query();
      wp_reset_postdata(); 
      //for leaders
-   $my_leaders_query = new WP_Query('cat=1148&'."monthnum=$month&year=$year&day=$day" );
+   $my_leaders_query = new WP_Query('cat=1148&'."monthnum=$month&year=$year&day=$day&hour=$hour" );
       if ( $my_leaders_query->
     have_posts() ) { while ( $my_leaders_query->have_posts() ) { $my_leaders_query->the_post();?>
     <li class="recentcomments"><strong>For Pastors and Teachers:</strong><br /><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
@@ -31,7 +32,7 @@ $year = get_the_time('Y',$theID);
       wp_reset_query();
       wp_reset_postdata();
        //for parents
-$my_parent_query = new WP_Query('cat=1149&'."monthnum=$month&year=$year&day=$day" );
+$my_parent_query = new WP_Query('cat=1149&'."monthnum=$month&year=$year&day=$day&hour=$hour" );
    if ( $my_parent_query->
     have_posts() ) { while ( $my_parent_query->have_posts() ) { $my_parent_query->the_post();?>
     <li class="recentcomments"><strong>For Parents:</strong><br /> <a href="<?php the_permalink() ?>"><?php the_title(); ?> </a></li>
@@ -40,16 +41,16 @@ $my_parent_query = new WP_Query('cat=1149&'."monthnum=$month&year=$year&day=$day
    wp_reset_query();
    wp_reset_postdata();
   // marketplace stuff
-$my_market_query = new WP_Query('cat=1163&'."monthnum=$month&year=$year&day=$day" );
+$my_market_query = new WP_Query('cat=409&'."monthnum=$month&year=$year&day=$day&hour=$hour" );
    if ( $my_market_query->
     have_posts() ) { while ( $my_market_query->have_posts() ) { $my_market_query->the_post();?>
-     <li class="recentcomments"><strong>For Christianity In the Marketplace:</strong><br /> <a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
+     <li class="recentcomments"><strong>For Students:</strong><br /> <a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
     <?php }
    }
    wp_reset_query();
    wp_reset_postdata(); 
       //for unbelievers
-      $my_unbeliever_query = new WP_Query('cat=1162&'."monthnum=$month&year=$year&day=$day" );
+      $my_unbeliever_query = new WP_Query('cat=1162&'."monthnum=$month&year=$year&day=$day&hour=$hour" );
          if ( $my_unbeliever_query->have_posts() ) {
           while ( $my_unbeliever_query->have_posts() ) { 
             $my_unbeliever_query->the_post();?>
