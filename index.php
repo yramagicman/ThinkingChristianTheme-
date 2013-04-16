@@ -79,19 +79,7 @@
      
       <!--loop 2 -->
       <?php if ( !is_paged()  ) :?>
-      <h1><em>Focused:</em></h1>
-      <div class="row">
-        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("col1") ) : ?>
-          one
-        <?php  endif; ?>
-        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("col2") ) : ?>
-          two
-        <?php  endif; ?>
-        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("col3") ) : ?>
-          thre
-        <?php  endif; ?>
-      </div>
-      <?php  endif; ?>
+      
       <?php if ( !is_paged()  ) :?>
       <h1><em>Further:</em></h1>
       <?php  endif; ?>
