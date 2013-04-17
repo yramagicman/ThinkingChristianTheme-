@@ -167,7 +167,7 @@ header {
 header .blogTitle {
   letter-spacing: 2px;
   clear: left;
-  width: 18em;
+  width: 12em;
   margin: 20px;
   //  margin-bottom:0;
   position: relative;
@@ -206,6 +206,7 @@ header .blogTitle a:hover {
   bottom: -105px;
   left: 20px;
   z-index: 2;
+  font-family:Calibri, Helvetica,sans-serif;
   /*  border: 1px solid #f00;*/
 }
 
@@ -234,6 +235,7 @@ nav ul {
   margin-left: 1px;
   background-color: rgb(57, 57, 57);
   background-color: rgba(0, 0, 0, 0.65);
+  font-size: 0.98em;
   /*  font-variant: small-caps;*/
 }
 
@@ -597,6 +599,7 @@ footer .presenting {
   cursor: pointer;
 }
 
+
 @media screen and (max-width: 500px) {
   #uvTab {
     display: none !important;
@@ -624,7 +627,22 @@ footer .presenting {
     }
   }
 }
+#feedburner_email_widget_sbef {
 
+//padding-left:15px;
+text-align:left;
+}
+#feedburner_email_widget_sbef text{
+width:140px;
+display: block;
+}
+#feedburner_email_widget_sbef label{
+display:block;
+}
+
+#feedburner_email_widget_sbef_submit {
+height:25px;
+}
 @media print {
   @import "_print.scss";
 }

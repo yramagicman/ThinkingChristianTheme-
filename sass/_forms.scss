@@ -25,13 +25,15 @@ input {
     border: none;
     box-shadow: none;
   }
-//&[type=submit], &[type=button] {
-//    @include border-radius($r);
-//    @include simpleGradient($startColor, $endColor);
-//    box-shadow: none;
-//  }
+&[type=submit], &[type=button] {
+    @include border-radius($r);
+    @include simpleGradient(#fff, #ccc);
+    box-shadow: none;
+  }
 }
-
+.FeedburnerEmailWidget{
+    margin-left:-2em;
+}
 textarea {
   width: 90%;
   height: 15em;
