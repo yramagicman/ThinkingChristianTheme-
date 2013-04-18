@@ -45,7 +45,6 @@ $tags = strip_tags($_GET['tags']);
           <?php comments_number( $zero, $one, $more ); ?>
           </a>
         </div>
-        <?php endif; ?>
       </div>
       <!-- Closes topPost -->
       <!--      <br/>-->
