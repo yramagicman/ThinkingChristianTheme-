@@ -11,9 +11,9 @@ get_header();
     </h1>
     <em><?php echo category_description( $category_id ); ?></em>
     <?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
-    <h1 class="pagetitle">Posts Tagged &#8216;
+    <h1 class="pagetitle" style="margin-top: 35px;">
       <?php single_tag_title(); ?>
-      &#8217;</h1>
+     </h1>
 <h3><em><?php echo tag_description( $tag_id); ?></em></h3>
     <?php /* If this is a daily archive */ } elseif (is_day()) { ?>
     <h2 class="pagetitle">Archive for
@@ -44,9 +44,9 @@ get_header();
     <?php endif; ?>
     <?php while (have_posts()) : the_post(); ?>
     <div <?php post_class() ?>>
-      <h3 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
+      <h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
         <?php the_title(); ?>
-        </a></h3>
+        </a></h2>
       <small>
       <?php the_time('l, F jS, Y') ?>
       </small>
@@ -60,7 +60,7 @@ get_header();
         <?php endif; ?>-->
         <?php if (has_tag() ) :?>
         <br/>
-        Tags:
+        Tagged As:
         <?php the_tags('<em></em>', ', ', ''); ?>
         <?php endif; ?>
       </div>

@@ -1,11 +1,13 @@
 </div>
 <footer id="footer">
   <!-- If you'd like to support WordPress, having the "powered by" link somewhere on your blog is the best way; it's our only promotion or advertising. -->
+  
   <div class="presenting">
     <?php bloginfo('name'); ?>
     is proudly powered by <a href="http://wordpress.org/">WordPress</a><br />
       Web design by <a href="http://www.perpetuallycreative.com/web">Perpetually Creative</a>.
-      All written content not attributed to other sources is copyright<br />&copy; Thomas A. Gilson as of the date of posting.<br /> <a href="http://www.thinkingchristian.net/copyright-information/">Permissions information and image credits here</a>.
+      All written content not attributed to other sources is copyright<br />&copy; Thomas A. Gilson as of the date of posting.<br /> <a href="http://www.thinkingchristian.net/copyright-information/">Permissions information and image credits here</a>.<br />
+      <a href="http://www.dreamhost.com/donate.cgi?id=16600"><img border="0" alt="Donate towards my web hosting bill!" src="https://secure.newdream.net/donate1.gif" /></a>
     </div>
   </div>
    <div class="footwidget"><?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("footer") ) : ?>

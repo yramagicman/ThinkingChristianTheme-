@@ -1,8 +1,8 @@
 /*
-Theme Name: Thinking Christian, New Home Page 
+Theme Name: Thinking Christian, New Home Page
 URI: http://www.perpetuallycreative.com/web
 Theme URI: http://www.perpetuallycreative.com/web
-Description: 
+Description:
 Version:2
 Author: Jonathan
 Author URI: http://www.perpetuallycreative.com/web
@@ -1016,7 +1016,7 @@ dd {
 
 /* line 139, sass/style.scss */
 .body .padding {
-  margin: 10px 10px;
+  margin: 10px 10px 10px 30px;
 }
 
 /* line 143, sass/style.scss */
@@ -1049,7 +1049,7 @@ header {
 header .blogTitle {
   letter-spacing: 2px;
   clear: left;
-  width: 12em;
+  width: 15em;
   margin: 20px;
   position: relative;
   top: -90px;
@@ -1554,12 +1554,12 @@ footer .presenting {
   -o-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 32, sass/_home.scss */
+/* line 33, sass/_home.scss */
 .home .body {
   width: 100%;
   left: 0;
 }
-/* line 36, sass/_home.scss */
+/* line 37, sass/_home.scss */
 .home .central-column {
   margin-bottom: 3em;
   margin-top: 0;
@@ -1570,11 +1570,11 @@ footer .presenting {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 42, sass/_home.scss */
+/* line 43, sass/_home.scss */
 .home .top {
-  margin: 3em 0 4em 2%;
+  margin: 3em 0 4em 1%;
 }
-/* line 44, sass/_home.scss */
+/* line 45, sass/_home.scss */
 .home .top a {
   color: #fff;
   font-weight: bold;
@@ -1582,12 +1582,12 @@ footer .presenting {
   text-decoration: none;
   font-size: 125%;
 }
-/* line 63, sass/_home.scss */
+/* line 64, sass/_home.scss */
 .home .top ul {
   margin: 0;
   padding: 0;
 }
-/* line 67, sass/_home.scss */
+/* line 68, sass/_home.scss */
 .home .top li {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -1602,7 +1602,7 @@ footer .presenting {
   border-radius: 7px;
   border: 1px solid black;
 }
-/* line 75, sass/_home.scss */
+/* line 76, sass/_home.scss */
 .home .top li .pos, .home .top li a {
   position: absolute;
   top: 0;
@@ -1617,80 +1617,80 @@ footer .presenting {
   -moz-transition: background 400ms ease;
   transition: background 400ms ease;
 }
-/* line 88, sass/_home.scss */
+/* line 89, sass/_home.scss */
 .home .top li .pos:hover, .home .top li a:hover {
   background: none rgba(0, 0, 0, 0);
 }
-/* line 94, sass/_home.scss */
+/* line 95, sass/_home.scss */
 .home .menu-item-16556 {
   background: url("images/familyHeader.jpg") 65% top no-repeat;
   height: 150px;
 }
-/* line 99, sass/_home.scss */
+/* line 100, sass/_home.scss */
 .home .menu-item-16560 {
   background: url("images/pastorHeader.jpg") 65% top no-repeat;
   height: 150px;
 }
-/* line 104, sass/_home.scss */
+/* line 105, sass/_home.scss */
 .home .menu-item-16561 {
   background: url("images/businessHeader.jpg") 50% top no-repeat;
   height: 150px;
 }
-/* line 109, sass/_home.scss */
+/* line 110, sass/_home.scss */
 .home .featured-links {
   margin-top: 2em;
   padding-top: 0;
   border-top: 1px solid #cccccc;
 }
-/* line 113, sass/_home.scss */
+/* line 114, sass/_home.scss */
 .home .featured-links h2 {
   margin-top: 0.25em;
 }
-/* line 116, sass/_home.scss */
+/* line 117, sass/_home.scss */
 .home .featured-links ul {
   margin-left: -1.5em;
   padding: 0;
 }
-/* line 120, sass/_home.scss */
+/* line 121, sass/_home.scss */
 .home .featured-links li {
   margin: 0 -0.75em;
   display: inline;
   text-align: center;
 }
-/* line 127, sass/_home.scss */
+/* line 128, sass/_home.scss */
 .home .featured-post {
   margin-top: 0;
 }
-/* line 130, sass/_home.scss */
+/* line 131, sass/_home.scss */
 .home .pagehead {
   margin-bottom: 2.5em;
   text-align: center;
 }
-/* line 134, sass/_home.scss */
+/* line 135, sass/_home.scss */
 .home .pagetitle {
   color: black;
   margin-bottom: -0.4em;
   text-align: center;
 }
-/* line 140, sass/_home.scss */
+/* line 141, sass/_home.scss */
 .home .topTitle {
   margin-bottom: 0;
 }
-/* line 143, sass/_home.scss */
+/* line 144, sass/_home.scss */
 .home .topTitle a {
   color: #1c365c;
   text-decoration: underline;
 }
-/* line 146, sass/_home.scss */
+/* line 147, sass/_home.scss */
 .home .topTitle a:hover {
   color: black;
   text-decoration: none;
 }
-/* line 151, sass/_home.scss */
+/* line 152, sass/_home.scss */
 .home .true-reason {
   margin-top: 2em;
 }
-/* line 154, sass/_home.scss */
+/* line 155, sass/_home.scss */
 .home .main {
   border-bottom: 1px solid #999999;
   padding: 0 3px 1px;
@@ -1698,15 +1698,15 @@ footer .presenting {
   overflow: hidden;
   text-align: center;
 }
-/* line 161, sass/_home.scss */
+/* line 162, sass/_home.scss */
 .home #searchform p {
   margin-top: -0.5em;
 }
-/* line 164, sass/_home.scss */
+/* line 165, sass/_home.scss */
 .home #searchform .submitbutton {
   display: block;
 }
-/* line 167, sass/_home.scss */
+/* line 168, sass/_home.scss */
 .home footer {
   background: white;
   margin-top: 50px;
@@ -1715,6 +1715,10 @@ footer .presenting {
   -ms-border-radius: 10px 10px 0 0;
   -o-border-radius: 10px 10px 0 0;
   border-radius: 10px 10px 0 0;
+}
+/* line 175, sass/_home.scss */
+.home .book-review.span3 {
+  margin-right: 0;
 }
 
 /* line 617, sass/style.scss */

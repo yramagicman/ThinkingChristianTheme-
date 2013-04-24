@@ -27,6 +27,7 @@ header {
 .content {
   background: #fff;
   @include border-radius($outerR);
+  //padding-left: 5%;
 }
 
 .body {
@@ -40,7 +41,7 @@ header {
   @include border-radius(5px);
 }
 .top {
-  margin: 3em 0 4em percentage($gutter * 0.5);
+  margin: 3em 0 4em percentage($gutter * 0.25);
   a {
     color: #fff;
     @extend h1;
@@ -169,4 +170,8 @@ footer{
   background:white;
   margin-top:50px;
   @include border-radius($outerR $outerR 0 0)
+}
+
+.book-review.span3{
+    margin-right:0;
 }

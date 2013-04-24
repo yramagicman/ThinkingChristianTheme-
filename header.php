@@ -32,10 +32,9 @@ fbg.hideFOUT('asap');
 // parents id =  1149
 // pastors-teachers id =1166
 $category = get_the_category(); //get the category of the post
-// $catID = $category[0]->slug; //find the id
-$catID= 123;
+$catID = $category[0]->slug; //find the id
 //marketplace
-if ($catID == 'marketplace') : ?>
+if ($catID == 'students' || $catID == 'monday-student-focus' ) : ?>
 <style type="text/css">
 /* <?php echo $category[0]->slug ?>*/
 header {
@@ -48,7 +47,7 @@ header {
 </style>
 <?php
 // leaders
-elseif ($catID == 'leaders') :?>
+elseif ($catID == 'leaders' || $catID == 'tuesday-pastor-teacher-focus') || $catID == 'pastors-teachers' :?>
 <style type="text/css">
 /* <?php echo $category[0]->slug ?>*/
 header {
@@ -64,14 +63,14 @@ header {
 elseif ($catID == 'pastors-teachers') :?>
 <style type="text/css">
 /* <?php echo $category[0]->slug ?>*/
-header {
+/*header {
  background: url(<?php echo get_template_directory_uri() ;
 ?>/images/pastorHeader.jpg) no-repeat center top;
 }
 .leadersBlurb, .lComInfo {
   display: block;
 }
-</style>
+*/</style>
 <?php
 //nonbelievers
 elseif ($catID == 'nonbelievers') :?>
@@ -87,7 +86,7 @@ header {
 </style>
 <?php
 //parents
-elseif ($catID == 'parents') :?>
+elseif ($catID == 'parents' || $catId =='friday-parent-focus') :?>
 <style type="text/css">
 /* <?php echo $category[0]->slug ?>*/
 header {
