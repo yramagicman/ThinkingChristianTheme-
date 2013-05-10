@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <div class="content">
 <div class="body">
   <div class="padding">
@@ -16,7 +15,7 @@
           <?php  the_post_thumbnail() ?>
           <?php the_excerpt   ('(continue reading...)'); ?>
          <!--</a> </h2> </blockquote> </p>-->
-          <a href="<?php the_permalink()?>" class="readmore">read more</a> 
+          <a href="<?php the_permalink()?>" class="readmore">read more</a>
         </div>
         <div class="linkpages">
           <?php wp_link_pages(); ?>
@@ -24,12 +23,10 @@
         <?php if ( function_exists('the_tags') ) : ?>
         <div class="catntag">
             <?php if (has_tag() ) :?>
-            
         Tags:
         <?php the_tags('<em></em>', ', ', ''); ?>
         <?php endif; ?><br />
-        
-        <?php 
+        <?php
         $zero ='0 comments';
         $one = '1 comment';
         $more = '% comments';?>
@@ -54,7 +51,6 @@
         <?php endif; ?>
       </div>
       <!-- Closes Comment -->
-    
     <!-- Closes Comment -->
     <?php endwhile; ?>
     <div class="navigation">
@@ -77,21 +73,6 @@
   </div>
 </div>
 <!-- Closes body-->
-<!-- BEGIN OWA Tracking Code -->
-<?php     
-require_once('/home/thinkingchristian/thinkingchristian.net/webstats/owa_php.php');
-    
-$owa = new owa_php();
-// Set the site id you want to track
-$owa->setSiteId('0b6c7a3b80ce532f970911c4ab6f5c85');
-// Uncomment the next line to set your page title
-$owa->setPageTitle('Page');
-// Set other page properties
-//$owa->setProperty('Page');
-$owa->trackPageView();
-    
-  ?>
-<!-- END OWA Tracking Code -->
 <?php get_sidebar(); ?>
 <!-- Closes Main -->
 <?php get_footer(); ?>

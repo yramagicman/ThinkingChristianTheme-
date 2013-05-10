@@ -81,21 +81,7 @@
   </div>
 </div>
 <!-- Closes body-->
-<!-- BEGIN OWA Tracking Code -->
-<?php     
-require_once('/home/thinkingchristian/thinkingchristian.net/webstats/owa_php.php');
-    
-$owa = new owa_php();
-// Set the site id you want to track
-$owa->setSiteId('0b6c7a3b80ce532f970911c4ab6f5c85');
-// Uncomment the next line to set your page title
-$owa->setPageTitle('Page');
-// Set other page properties
-//$owa->setProperty('Page');
-$owa->trackPageView();
-    
-  ?>
-<!-- END OWA Tracking Code -->
+
 <?php get_sidebar(); ?>
 <!-- Closes Main -->
 <?php get_footer(); ?>

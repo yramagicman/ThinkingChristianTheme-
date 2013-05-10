@@ -9,7 +9,7 @@
     $buffer = str_replace(array("\r\n", "\r", "\n", "\t", '  ', '    ', '    '), '', $buffer);
     return $buffer;
   }
-	
+
   /* your css files */
 include('style.css');
 

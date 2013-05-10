@@ -3,7 +3,6 @@
 Template Name: Home Page
 */
 ?>
-
 <?php get_header(); ?>
 <!--home page-->
 <?php $args = array ('ignore_sticky_posts'=>'1', 'posts_per_page'=>'5');
@@ -32,8 +31,7 @@ $featuredPost = new WP_Query($args); ?>
             <h3 class="topTitle"><a href="<?php the_permalink() ?>">
             <?php the_title(); ?>
             </a></h3>
-              
-            <?php 
+            <?php
             $zero ='0 comments';
             $one = '1 comment';
             $more = '% comments';?>
@@ -48,15 +46,11 @@ $featuredPost = new WP_Query($args); ?>
             <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("The_Core") ) : ?>
                The Core
             <?php  endif; ?>
-            
           </div>
           <div class="lli">
             <h2 class="main">LLI</h2>
-            
               LLI
-            
             <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("extra2") ) : ?>
-
             <?php  endif; ?>
           </div>
           </aside>
@@ -85,12 +79,9 @@ $featuredPost = new WP_Query($args); ?>
           <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("bookReview") ) : ?>
             Book Review
           <?php  endif; ?>
-          
           <div class="llm">
             <h2 class="main">LLM</h2>
-            
               LLM
-            
             <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("extra4") ) : ?>
             <?php  endif; ?>
           </div>

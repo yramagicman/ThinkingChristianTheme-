@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <div class="content">
 <div class="body">
   <div class="padding">
@@ -10,7 +9,7 @@
         <?php the_title(); ?>
         </a></h2>
       <p class="topMeta"> Posted on
-        <?php the_time(' M d, Y') ?>
+        <?php the_time(' M j, Y') ?>
       </p>
       <!--        -->
       <div class="topContent">
@@ -26,7 +25,6 @@
         <?php the_tags('<em></em>', ', ', ''); ?>
         <?php endif; ?>
       </div>
-     
       <?php endif; ?>
     </div>
     <!--<ul class="relatedPosts">
@@ -44,7 +42,6 @@
       <?php else : ?>
       <!-- WP 2.6 and below -->
       <?php comments_template(); ?>
-    
       <?php endif; ?>
       <span class="rssleft">
       <?php post_comments_feed_link(__('Comments <abbr title="Really Simple Syndication">RSS</abbr> Feed')); ?>
@@ -70,25 +67,8 @@
     <!-- Closes topPost -->
     <?php endif; ?>
   </div>
-  <!-- BEGIN OWA Tracking Code -->
-  <?php     
-  require_once('/home/thinkingchristian/thinkingchristian.net/webstats/owa_php.php');
-      
-  $owa = new owa_php();
-  // Set the site id you want to track
-  $owa->setSiteId('0b6c7a3b80ce532f970911c4ab6f5c85');
-  // Uncomment the next line to set your page title
-  $owa->setPageTitle('Post');
-  // Set other page properties
-  //$owa->setProperty('Post');
-  $owa->trackPageView();
-      
-    ?>
-  <!-- END OWA Tracking Code -->
 </div>
-
 <!-- Closes body-->
-
 <?php get_sidebar(); ?>
 <!-- Closes Main -->
 <?php get_footer(); ?>

@@ -47,7 +47,7 @@ header {
 </style>
 <?php
 // leaders
-elseif ($catID == 'leaders' || $catID == 'tuesday-pastor-teacher-focus') || $catID == 'pastors-teachers' :?>
+elseif ($catID == 'leaders' || $catID == 'tuesday-pastor-teacher-focus' || $catID == 'pastors-teachers') :?>
 <style type="text/css">
 /* <?php echo $category[0]->slug ?>*/
 header {
@@ -86,7 +86,8 @@ header {
 </style>
 <?php
 //parents
-elseif ($catID == 'parents' || $catId =='friday-parent-focus') :?>
+elseif ($catID == 'parents' || $catID =='friday-parent-focus') :
+?>
 <style type="text/css">
 /* <?php echo $category[0]->slug ?>*/
 header {
@@ -100,8 +101,8 @@ header {
 <?php
 else :?>
 <style type="text/css">
- <?php 
- // echo $category[0]->slug 
+ <?php
+ // echo $category[0]->slug
 ?>
 header {
  background: url(<?php echo get_template_directory_uri() ;
@@ -129,7 +130,7 @@ header {
   <nav class="navGeneral">
     <?php wp_nav_menu( array( 'container_class' => 'menu', 'theme_location' => 'generalNav' ) ); ?>
   </nav>
-<div class="container">  
+<div class="container">
 <header>
   <hgroup class="headText">
     <h1 class="blogTitle"><a href="<?php echo home_url(); ?>">

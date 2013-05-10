@@ -62,16 +62,16 @@
   <p>You must be <a href="<?php echo wp_login_url( get_permalink() ); ?>">logged in</a> to post a comment.</p>
   <?php else : ?>
  <p><small>By commenting here you acknowledge that you have read and agree to abide by this site's <a href="http://www.thinkingchristian.net/unfiled/2007/12/discussion-policy/">discussion policies</a>.</small></p>
-   
+
     <div class="comInfo" style="display: none;">
       <p class="pComInfo"><small>Articles filed as "For Parents" are intended for the support and encouragement of Christian parents. Questions are always welcome, if offered in the spirit of supportive exploration. Comments not contributing to the stated purpose will be removed. Debate is welcomed on the blog's main pages or in the Atheists/Skeptics section.</small></p>
       <p class="lComInfo"><small>Articles filed as "For Pastors and Teachers" are intended for the support and encouragement of Christian leaders. Questions are always welcome, if offered in the spirit of supportive exploration. Comments not contributing to the stated purpose will be removed. Debate is welcomed on the blog's main pages or in the Atheists/Skeptics section.</small></p>
       <p class="mComInfo"><small>Articles filed as "For Christians in the Marketplace" are intended for the support and encouragement of believers going about their day to day business. Questions are always welcome, if offered in the spirit of supportive exploration. Comments not contributing to the stated purpose will be removed. Debate is welcomed on the blog's main pages or in the Atheists/Skeptics section.</small></p>
       <p>
     </div>
-       <?php comment_form();?> 
-       
-       
+       <?php comment_form();?>
+
+
          <?php endif; // If registration required and not logged in ?>
 </div>
 <?php endif; // if you delete this the sky will fall on your head ?>

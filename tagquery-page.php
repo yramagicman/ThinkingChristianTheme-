@@ -15,9 +15,7 @@ $tags = strip_tags($_GET['tags']);
       } else{
                 $my_query = new WP_Query('tag=core' );
       }
-
       ?>
-
 <?php if ($my_query->have_posts() and !is_paged()) : ?>
       <?php while ($my_query->have_posts() ) : $my_query->the_post(); ?>
       <div class="topPost">
@@ -31,13 +29,12 @@ $tags = strip_tags($_GET['tags']);
         <?php  the_post_thumbnail() ?>
           <?php the_excerpt('(continue reading...)'); ?>
                     <a href="<?php the_permalink()?>" class="readmore">read more</a>
-       <!-- </a> </h2> </blockquote> </p>--> 
+       <!-- </a> </h2> </blockquote> </p>-->
         </div>
         <div class="linkpages">
           <?php wp_link_pages(); ?>
         </div>
-        
-          <?php 
+          <?php
         $zero ='0 comments';
         $one = '1 comment';
         $more = '% comments';?>
@@ -50,7 +47,6 @@ $tags = strip_tags($_GET['tags']);
       <small>
       <?php //edit_post_link('Edit this entry?','',''); ?>
       </small>
-      
       <!-- Closes Comment -->
       <?php endwhile; ?>
       <!--loop 2 -->
@@ -62,7 +58,6 @@ $tags = strip_tags($_GET['tags']);
           <?php previous_posts_link('Newer Entries &raquo;') ?>
         </div>
       </div>
-
       <?php else : ?>
       <div class="topPost">
         <h2 class="topTitle"><a href="<?php the_permalink() ?>">Not Found</a></h2>
@@ -76,9 +71,8 @@ $tags = strip_tags($_GET['tags']);
   </div>
 <!-- Closes body-->
 <!-- BEGIN OWA Tracking Code -->
-<?php     
+<?php
 // require_once('/home/thinkingchristian/thinkingchristian.net/webstats/owa_php.php');
-    
 // $owa = new owa_php();
 // Set the site id you want to track
 // $owa->setSiteId('0b6c7a3b80ce532f970911c4ab6f5c85');
@@ -87,7 +81,6 @@ $tags = strip_tags($_GET['tags']);
 // Set other page properties
 //$owa->setProperty('Index');
 // $owa->trackPageView();
-    
   ?>
 <!-- END OWA Tracking Code -->
 <?php get_sidebar(); ?>

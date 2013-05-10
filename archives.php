@@ -4,8 +4,6 @@ get_header();
 
 <div class="content">
 <div class="body">
-  <div class="topRound">
-  </div>
   <div class="padding">
     <?php get_search_form(); ?>
     <h2>Archives by Month:</h2>
@@ -16,8 +14,6 @@ get_header();
     <ul>
       <?php wp_list_categories(); ?>
     </ul>
-  </div>
-  <div class="bottomRound">
   </div>
 </div>
 <!--sidebar-->

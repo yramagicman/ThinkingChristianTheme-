@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <div class="content">
   <div class="body">
    <ul>
@@ -47,22 +46,7 @@
   </ul>
   </div>
   <!-- Closes body-->
-  <!-- BEGIN OWA Tracking Code -->
-  <?php     
-  require_once('/home/thinkingchristian/thinkingchristian.net/webstats/owa_php.php');
-      
-  $owa = new owa_php();
-  // Set the site id you want to track
-  $owa->setSiteId('0b6c7a3b80ce532f970911c4ab6f5c85');
-  // Uncomment the next line to set your page title
-  $owa->setPageTitle('Search Result');
-  // Set other page properties
-  //$owa->setProperty('Search Result');
-  $owa->trackPageView();
-      
-    ?>
-  <!-- END OWA Tracking Code -->
-<?php get_template_part( 'sidebar2' ); ?>
+ <?php get_template_part( 'sidebar2' ); ?>
 </div>
 <!-- Closes Main -->
 <?php get_footer(); ?>

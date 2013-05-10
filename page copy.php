@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <div id="content">
 <div class="body">
   <div class="padding">
